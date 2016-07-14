@@ -11,10 +11,15 @@
 					}
 				}
 	 		})
-            .state('web',{
-                url:'/web',
+            .state('left',{
+                url:'/left',
                 templateUrl:'web/page/left.html',
                 controllers:'leftCtrl'
+            })
+            .state('right',{
+                url:'/right',
+                templateUrl:'web/page/right.html',
+                controllers:'rightCtrl'
             })
 
 	 		$urlRouterProvider.otherwise('/index1');
