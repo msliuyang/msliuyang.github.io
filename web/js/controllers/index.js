@@ -2,8 +2,8 @@
  	module.config(function($stateProvider,$urlRouterProvider){
 
  		$stateProvider
- 			.state('index1',{
-				url:'/index1',
+ 			.state('index',{
+				url:'/index',
 				views: {
 					'': {
 					    templateUrl: 'web/page/main.html',
@@ -21,8 +21,7 @@
                 templateUrl:'web/page/right.html',
                 controllers:'rightCtrl'
             })
-
-	 		$urlRouterProvider.otherwise('/index1');
+	 		$urlRouterProvider.otherwise('/index');
  	}).controller('indexCtrl', function($scope){
  		$scope.hello = "thank you";
  	});
