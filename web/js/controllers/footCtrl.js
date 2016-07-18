@@ -3,5 +3,6 @@
  */
 angular.module('blog')
     .controller('footCtrl',function($scope){
-        alert(1);
+        console.log('foot');
+        $scope.foot='foot';
     });

@@ -3,20 +3,24 @@
 
  		$stateProvider
  			.state('index',{
-				url:'/index',
-				views: {
-					'': {
-					    templateUrl: 'web/page/main.html',
+                url:'/index',
+                views: {
+                    '': {
+                        templateUrl: 'web/page/main.html',
                         controllers:'mainCtrl'
-					}
-				}
-	 		})
-            .state('left',{
+                    },
+                    '@index': {
+                        templateUrl: 'web/page/foot.html',
+                        controllers:'footCtrl'
+                    }
+                }
+            })
+            .state('index.left',{
                 url:'/left',
                 templateUrl:'web/page/left.html',
                 controllers:'leftCtrl'
             })
-            .state('right',{
+            .state('index.right',{
                 url:'/right',
                 templateUrl:'web/page/right.html',
                 controllers:'rightCtrl'

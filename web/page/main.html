@@ -3,9 +3,16 @@
 <head>
 	<meta charset="utf-8">
 	<title>中间</title>
+
 </head>
-<body ng-controller="mainCtrl">
-    aaaaaaaaa
-    <div ui-view="foot"></div>
+<body>
+<div ng-controller="mainCtrl">{{name}}</div>
+<a ui-sref="index.right">跳转到right.html</a>
+<a ui-sref="index.left">跳转到left.html</a>
+
+
+    <div ui-view></div>
+
+
 </body>
 </html>

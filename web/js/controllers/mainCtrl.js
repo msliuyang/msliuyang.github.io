@@ -1,5 +1,5 @@
 
-angular.module('blog')
-.controller('mainCtrl',function($scope){
-    alert(1);
+module.controller('mainCtrl',function($scope){
+        console.log('main');
+        $scope.name='main';
 });

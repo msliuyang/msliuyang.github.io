@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html  ng-app="blog" lang="en">
 <head>
 	<meta charset="utf-8">
 	<title>首页</title>
@@ -16,11 +16,12 @@
 
 	<script type="text/javascript" src="web/js/controllers/index.js">
 	</script>
+    <script src="web/js/controllers/mainCtrl.js"></script>
+    <script src="web/js/controllers/footCtrl.js"></script>
 </head>
-<body ng-app="blog" style="padding:30px;">
+<body ng-controller="indexCtrl" style="padding:30px;">
 
-    <a ui-sref="right">跳转到right.html</a>
-    <a ui-sref="left">跳转到left.html</a>
+
 
 	<div class="container-fluid">
 
@@ -29,6 +30,6 @@
 	</div>
 
 
-		<div ng-controller="indexCtrl">{{hello}}</div>
+		<div >{{hello}}</div>
 </body>
 </html>
