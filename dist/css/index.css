@@ -1,6 +1,4 @@
-html,body{
-			height: 100%;
-		}
+html,body{height: 100%;background:rgb(242,242,242); color: #000; }
 
 .nav a{  font-size: 16px; padding: 5px;color: rgb(105,177,153);
 	animation: nav 1s cubic-bezier(.62,-0.91,.45,1.97) .5s both;
@@ -32,13 +30,13 @@ html,body{
 }
 
 
-.experence-kgc{
-	animation: experence 1s  ease-out 1.5s both;
+.exp-kgc{
+	animation: work 1s  ease-out 1.5s both;
 }
-.experence-lantern{
-	animation: experence 1s  ease-out 2s both;
+.exp-lantern{
+	animation: work 1s  ease-out 2s both;
 }
-@keyframes experence{
+@keyframes work{
 	0% {
 			opacity:0;
 			transform:translateX(-200px);
@@ -53,12 +51,12 @@ html,body{
 
 figure{ transform-style: preserve-3d; perspective: 1000px;}
 .img-box{ display: inline-block; width: 92px;height: 92px; border-radius: 50%; 
-		animation: userImg 1s cubic-bezier(.86,.06,.31,1.31) both;
+		animation: userImg 1s linear both;
 	 }
 @keyframes userImg{
 		0%{
 			opacity: 0;
-			transform:translateX(-200px) rotate(-180deg);
+			transform:translateX(-300px) rotate(-90deg);
 		}
 	100%{
 			opacity: 1;
@@ -99,18 +97,19 @@ figcaption{ color:rgb(105,177,153); text-shadow: 0 0 5px #eee;
 	figcaption{ font-size: 24px;
 
 	  }
-	.experence .experence-title{ padding: 15px 45px; }
-	.experence .experence-info{ padding-left: 45px;padding-right: 45px; }
-	.experence .experence-title>span{ display: inline-block; padding:0 30px; }
-	.experence > p{ font-size: 16px; }
+	.exp-work .exp-title,.exp-project .exp-title{ padding: 15px 45px; }
+	.exp-work .exp-info,.exp-project .exp-info{ padding-left: 45px;padding-right: 45px; }
+	.exp-work .exp-title>span,.exp-project .exp-title>span{ display: inline-block; padding:0 30px; }
+	.exp-work p,.exp-project p{ font-size: 16px; }
 }
 
 
 
 /*------------- 工作经验 ------------*/
-.experence  p{ color:rgb(105,177,153); font-weight: bold;}
-.experence .experence-info dd{ padding: 5px; }
-.experence .experence-info dd:before{ content: "●";color:rgb(105,177,153); display: inline-block;padding-right: 5px; }
+.exp-work p,.exp-project p{ color:rgb(105,177,153); font-weight: bold;}
+.exp-work .exp-info dd,.exp-project .exp-info dd{ padding: 5px; }
+.exp-work .exp-info dd:before,.exp-project .exp-info dd:before{ content: "●";color:rgb(105,177,153); display: inline-block;padding-right: 5px; }
 
 
 
+.exp-box>section{ display: none; }
