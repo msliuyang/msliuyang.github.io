@@ -7,7 +7,7 @@ body {
   background-color: #fff;
 }
 li{ list-style: none; }
-body,figure,p,ul{ margin: 0; padding: 0}
+body,figure,p,ul,dl,dt,dd{ margin: 0; padding: 0}
 .container-fluid {
     padding-right: 15px;
     padding-left: 15px;
