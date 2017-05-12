@@ -92,7 +92,7 @@ figcaption{ color:rgb(105,177,153); text-shadow: 0 0 5px #eee;
 	 }
 
 	@keyframes nav{
-		0% {
+		0%{
 			opacity:0;
 			transform:translateY(-100%);
 			}
@@ -101,14 +101,14 @@ figcaption{ color:rgb(105,177,153); text-shadow: 0 0 5px #eee;
 			transform:translateY(0%);
 		}
 	}
-
+	.experence{ padding: 15px 45px; }
 
 
 	.img-box{  width: 120px;height: 120px; }
 	figcaption{ font-size: 24px;
 
 	  }
-	.exp-work .exp-title,.exp-project .exp-title{ padding: 15px 45px; }
+	/*.exp-work .exp-title,.exp-project .exp-title{ padding: 15px 45px; }*/
 	.exp-work .exp-info,.exp-project .exp-info{ padding-left: 45px;padding-right: 45px; }
 	.exp-work .exp-title>span,.exp-project .exp-title>span{ display: inline-block; padding:0 30px; }
 	.exp-work p,.exp-project p{ font-size: 16px; }
