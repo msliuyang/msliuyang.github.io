@@ -22,8 +22,8 @@
 
 <section class="container-fluid">
 
-	<section class="content col-md-4 col-sm-5 col-xs-12 boder">
-		<aside class="sidebar col-md-12 col-sm-12 col-xs-12 boder">
+	<section class="content col-md-4 col-sm-5 col-xs-12">
+		<aside class="sidebar col-md-12 col-sm-12 col-xs-12">
 			<figure class="col-md-12 col-sm-12 col-xs-12">
 			  <div class="img-box">
 			  	<img class="img-user" src="dist/img/user.png" alt="this is a photo" width="100%" height="100%">
@@ -47,17 +47,22 @@ github：刘洋</li>
 邮箱：15607109327</li>
 			</ul>
 		</section>
+
+		<section class="col-md-12 col-sm-12 col-xs-12">
+			<h4>个人箴言：</h4>
+			<p>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
+		</section>
 	</section>
 	<nav class="nav col-md-8 col-sm-7 col-xs-12">
-		<a class="col-md-3 col-xs-12" href="#"><i class="iconfont icon-gongzuojingyan"></i>工作经验</a>
-		<a class="col-md-3 col-xs-12 " href="#"><i class="iconfont icon-jingyanjilu"></i>项目经验</a>
-		<a class="col-md-3 col-xs-12 " href="#"><i class="iconfont icon-jinengget"></i>擅长技能</a>
-		<a class="col-md-3 col-xs-12 " href="#"><i class="iconfont icon-xueshengzuopin"></i>作品</a>
+		<a class="col-md-3 col-xs-12" href="#"><span><i class="iconfont icon-gongzuojingyan"></i>工作经验</span></a>
+		<a class="col-md-3 col-xs-12 " href="#"><span><i class="iconfont icon-jingyanjilu"></i>项目经验</span></a>
+		<a class="col-md-3 col-xs-12 " href="#"><span><i class="iconfont icon-jinengget"></i>擅长技能</span></a>
+		<a class="col-md-3 col-xs-12 " href="#"><span><i class="iconfont icon-xueshengzuopin"></i>作品</span></a>
 	</nav>
 
 <section class="exp-box clearfix">
 	<!-- 工作经验 -->
-	<section class="exp-work col-md-8 col-xs-12 boder" style="display: block;">
+	<section class="experence exp-work col-md-8 col-xs-12 show">
 		<section class="exp-kgc">
 		<p class="exp-title">
 			<i class="iconfont icon-gongzuojingyan"></i>
@@ -94,7 +99,7 @@ github：刘洋</li>
 
 
 	<!-- 项目经验 -->
-	<section class="exp-project col-md-8 col-xs-12 boder">
+	<section class="experence exp-project col-md-8 col-xs-12 hide">
 		<section class="exp-kgc">
 			<p class="exp-title">
 				<i class="iconfont icon-jingyanjilu"></i>
@@ -142,14 +147,35 @@ github：刘洋</li>
 	<!-- 项目经验 end-->
 
 	<!-- 技能 -->
-	<section>
-		
+	<section class="hide experence">
+		2222222222
 	</section>
 	<!-- 技能 end -->
 
 	<!-- 作品 -->
-	<section>
-		1111111
+	<section class="hide experence">
+		<ul class="img-list">
+				<li>
+					<img src="img/pic_01.png"/>
+				</li>
+				<li>
+					<img src="img/pic_02.png"/>
+				</li>
+				<li>
+					<img src="img/pic_03.png"/>
+				</li>
+				<li>
+					<img src="img/pic_04.png"/>
+					
+				</li>
+				<li>
+					<img src="img/pic_05.png"/>
+				</li>
+				<li>
+					<img src="img/pic_06.png"/>
+				</li>
+			</ul>
+
 	</section>
 	<!-- 作品 -->
 </section>
@@ -160,37 +186,48 @@ github：刘洋</li>
 </section>
 
 
+<script src="dist/js/jquery.js"></script>
+
+<script>
+	$(function(){
+		$(".nav").on("click","a",function(){
+			$(this).addClass("cur").siblings().removeClass("cur");
+			$(".exp-box .experence").eq($(this).index()).removeClass("hide").addClass("show").siblings().removeClass("show").addClass("hide");
+		});
+	});
+</script>
+
+
+
+
 
 <script type="text/javascript">
-	window.onload = function(){
-		var nav = document.querySelector(".nav");
-		var nav_sub = nav.children;
+	// window.onload = function(){
+	// 	var nav = document.querySelector(".nav");
+	// 	var nav_sub = nav.children;
 
-		var exper_box = document.querySelector(".exp-box");
-		var exper = exper_box.children;
+	// 	var exper_box = document.querySelector(".exp-box");
+	// 	var exper = exper_box.children;
 
-		for(var i = 0 ,length = nav_sub.length; i <length ;i++ ){
-			(function(i){
-			     nav_sub[i].onclick=function(){
-			     	for( var j = 0 , num=exper.length; j < num ; j++ ){
-			     		if( i == j){
-			     			exper[i].style.display ="block";
-			     			console.log(exper[i]);
-			     		}else{
-			     			exper[i].style.display ="none";
-			     		}
-			     	}
+	// 	for(var i = 0 ,length = nav_sub.length; i <length ;i++ ){
+	// 		(function(i){
+	// 		     nav_sub[i].onclick=function(){
+	// 		     	for( var j = 0 , num=exper.length; j < num ; j++ ){
+	// 		     		if( i == j){
+	// 		     			exper[i].setAttribute("class","show");
+	// 		     			// exper[i].className ="show";
+	// 		     			console.log(exper[i]);
+	// 		     		}else{
+	// 		     			exper[i].setAttribute("class","hide");
+	// 		     			// exper[i].className ="hide";
+	// 		     		}
+	// 		     	}
 			     	
-			     }
-		  	})(i);
+	// 		     }
+	// 	  	})(i);
 
-		}
-	}
-
-
-
-
-
+	// 	}
+	// }
 </script>
 
 
