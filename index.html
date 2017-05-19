@@ -8,15 +8,6 @@
 	<link rel="stylesheet" type="text/css" href="dist/css/common.css">
 	<link rel="stylesheet" type="text/css" href="dist/css/index.css">
 	<link rel="stylesheet" type="text/css" href="dist/font/iconfont.css">
-	<style type="text/css">
-		*{ box-sizing: border-box; }
-		/*.container-fluid{ height: 100%;}		*/
-		
-		.boder{ border:1px solid red;}
-	
-		figure,figcaption{ text-align: center; }
-	
-	</style>
 </head>
 <body>
 
@@ -42,9 +33,9 @@
 				<li><i class="iconfont icon-dianhua"></i>
 电话：15607109327</li>
 				<li><i class="iconfont icon-github"></i>
-github：刘洋</li>
+github：<a href="https://github.com/msliuyang">https://github.com/msliuyang</a></li>
 				<li><i class="iconfont icon-youxiang"></i>
-邮箱：15607109327</li>
+邮箱：ms_liu@foxmail.com</li>
 			</ul>
 		</section>
 
@@ -99,7 +90,7 @@ github：刘洋</li>
 
 
 	<!-- 项目经验 -->
-	<section class="experence exp-project col-md-8 col-xs-12 hide">
+	<section class="experence exp-project col-md-8 col-xs-12">
 		<section class="exp-kgc">
 			<p class="exp-title">
 				<i class="iconfont icon-jingyanjilu"></i>
@@ -147,35 +138,28 @@ github：刘洋</li>
 	<!-- 项目经验 end-->
 
 	<!-- 技能 -->
-	<section class="hide experence  col-md-8 col-xs-12">
+	<section class="experence exp-skill  col-md-8 col-xs-12">
 		<img src="dist/img/project/skill.png" width="100%" height="100%">
 	</section>
 	<!-- 技能 end -->
 
 	<!-- 作品 -->
-	<section class="hide experence  col-md-8 col-xs-12">
+	<section class="experence exp-works  col-md-8 col-xs-12">
 		<ul class="img-list">
-				<li class="col-md-4">
-					<img src="dist/img/project/itap.png" width="100%" height="100%">
+				<li>
+					<img src="dist/img/project/itap.png">
 				</li>
 				<li>
-					<img src="img/pic_02.png"/>
+					<img src="dist/img/project/sdqfx.png"/>
 				</li>
 				<li>
-					<img src="img/pic_03.png"/>
+					<img src="dist/img/project/tyj.png"/>
 				</li>
 				<li>
-					<img src="img/pic_04.png"/>
+					<img src="dist/img/project/fls.jpg"/>
 					
 				</li>
-				<li>
-					<img src="img/pic_05.png"/>
-				</li>
-				<li>
-					<img src="img/pic_06.png"/>
-				</li>
 			</ul>
-
 	</section>
 	<!-- 作品 -->
 </section>
@@ -195,39 +179,6 @@ github：刘洋</li>
 			$(".exp-box .experence").eq($(this).index()).removeClass("hide").addClass("show").siblings().removeClass("show").addClass("hide");
 		});
 	});
-</script>
-
-
-
-
-
-<script type="text/javascript">
-	// window.onload = function(){
-	// 	var nav = document.querySelector(".nav");
-	// 	var nav_sub = nav.children;
-
-	// 	var exper_box = document.querySelector(".exp-box");
-	// 	var exper = exper_box.children;
-
-	// 	for(var i = 0 ,length = nav_sub.length; i <length ;i++ ){
-	// 		(function(i){
-	// 		     nav_sub[i].onclick=function(){
-	// 		     	for( var j = 0 , num=exper.length; j < num ; j++ ){
-	// 		     		if( i == j){
-	// 		     			exper[i].setAttribute("class","show");
-	// 		     			// exper[i].className ="show";
-	// 		     			console.log(exper[i]);
-	// 		     		}else{
-	// 		     			exper[i].setAttribute("class","hide");
-	// 		     			// exper[i].className ="hide";
-	// 		     		}
-	// 		     	}
-			     	
-	// 		     }
-	// 	  	})(i);
-
-	// 	}
-	// }
 </script>
 
 
