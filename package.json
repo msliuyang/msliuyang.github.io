@@ -1,0 +1,6 @@
+{
+  "deploy": "push-dir --dir=dist/spa --remote=gh-pages --branch=master",
+  "devDependencies": {
+    "push-dir": "^0.4.1"
+  }
+}
